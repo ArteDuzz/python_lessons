@@ -1,6 +1,6 @@
 import copy
 # Задание 1
-def recipesFileToDict(filename):
+def recipes_file_to_dict(filename):
 	recipes_dict = {}
 	with open(filename) as file:
 		while True:
@@ -63,7 +63,7 @@ def get_shop_list_by_dishes(dishes_list, person_count):
 	except ZeroDivisionError:
 		print('Не указан список блюд или количество гостей')
 	else:
-		recipes_dict = recipesFileToDict('recipes.txt')
+		recipes_dict = recipes_file_to_dict('recipes.txt')
 		shop_list_per_person = get_ingredients_per_dish(dishes_list, recipes_dict)
 		if person_count == 1:
 			return shop_list_per_person
