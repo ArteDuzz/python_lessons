@@ -70,14 +70,3 @@ def translate_it(**kwargs):
 
 if __name__ == '__main__':
 	print(translate_it(path_to_source='FR.txt', path_to_result='for_texts', source_lang='fr'))
-
-
-
-
-
-
-
-
-
-
-
